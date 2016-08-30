@@ -14,8 +14,8 @@
 ### 2. Prepare Terminal
 
 - Load [`.bash_profile`](/.bash_profile).
-- Load [`.gitconfig](/.gitconfig) contents into the global `~/.gitconfig`.
-- Load up the Ocean theme from https://github.com/mdo/ocean-terminal
+- Load [`.gitconfig`](/.gitconfig) contents into the global `~/.gitconfig`.
+- Load up the Ocean theme from https://github.com/mdo/ocean-terminal.
 
 ### 3. Setup Firefox
 
@@ -30,7 +30,7 @@
   - Set `DocumentRoot` to `~/Work` (and make sure access to that directory is granted).
   - Set `AllowOverride` to `All` to enable use of `.htaccess` files.
   - Uncomment `LoadModule rewrite_module ...` to enable [mod_rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html) and `LoadModule php5_module ...` for PHP.
-- Create a nice `index.html` file for your new `DocumentRoot`.
+- Create a nice `index.html` file for your new document root.
 
 ### 5. Setup MySQL
 
@@ -56,4 +56,4 @@
   - [REST Client](https://www.atom.io/packages/rest-client)
 - Disable packages `wrap-guide` and `spell-check`.
 
-**Hide specific directories from project tree:** If you want to hide directories like `.sass-cache` and `node_modules` from the tree view, add them to `Ignored Names` in Atom's config and make sure there's a cross in front of `Hide Ignored Names` in the config of package `tree-view`.
+**Hide specific directories from tree view:** If you want to hide directories like `.sass-cache` and `node_modules` from the tree view, add them to `Ignored Names` in Atom's config and make sure `Hide Ignored Names` in the config of package `tree-view` is activated.
