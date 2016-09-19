@@ -22,9 +22,15 @@
 - Download and install latest version of [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/).
 - Make sure [Firebug](http://www.getfirebug.com/) extension is installed.
 
+### 4. Install Homebrew
+
+- Install latest version of [Homebrew](http://brew.sh/).
+- Install wget: `$ brew install wget`
+- Install maven: `$ brew install maven`
+
 ## Web development
 
-### 4. Setup Apache
+### 5. Setup Apache
 
 - Change the following in Apache's `httpd.conf`:
   - Set `DocumentRoot` to `~/Work` (and make sure access to that directory is granted).
@@ -32,13 +38,13 @@
   - Uncomment `LoadModule rewrite_module ...` to enable [mod_rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html) and `LoadModule php5_module ...` for PHP.
 - Create a nice `index.html` file for your new document root.
 
-### 5. Setup MySQL
+### 6. Setup MySQL
 
 - Download and install [MySQL Community Server](http://dev.mysql.com/downloads/mysql/) (DMG-Archive).
 - Change MySQL's root password using `$ mysqladmin -u root -p'<temporary password>' password '<new password>'`. You got the temporary password during installation. If you don't want to have a root password, type `''` as new password.
 - Download and install latest version of [phpMyAdmin](https://www.phpmyadmin.net/). A nice guide on how to set up phpMyAdmin can be found [here](https://www.coolestguidesontheplanet.com/get-apache-mysql-php-and-phpmyadmin-working-on-osx-10-11-el-capitan/).
 
-### 6. Setup Node.js and Composer
+### 7. Setup Node.js and Composer
 
 - Download and install latest version of [Node.js](https://www.nodejs.org/).
   - Globally install [Grunt](http://gruntjs.com/)'s CLI via npm: `$ npm install -g grunt-cli`
@@ -46,7 +52,7 @@
 
 **Fixing npm permissions:** When you try to install Grunt (or any node package) globally and an error which looks like `Error: EACCESS: permission denied, mkdir '/usr/local/lib/node_modules/grunt-cli']` shows up, get information [here](https://docs.npmjs.com/getting-started/fixing-npm-permissions) on how to fix it.
 
-### 7. Setup Atom
+### 8. Setup Atom
 
 - Download and install latest version of [Atom](https://www.atom.io/).
 - Install favourite packages:
