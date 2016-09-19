@@ -25,8 +25,8 @@
 ### 4. Install Homebrew
 
 - Install latest version of [Homebrew](http://brew.sh/).
-- Install wget: `$ brew install wget`
-- Install maven: `$ brew install maven`
+- Install wget using `$ brew install wget`.
+- Install [Apache Maven](http://maven.apache.org/) using `$ brew install maven`.
 
 ## Web development
 
