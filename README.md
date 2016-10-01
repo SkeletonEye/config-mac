@@ -20,6 +20,7 @@
 - Load [`.bash_profile`](/.bash_profile).
 - Load [`.gitconfig`](/.gitconfig) contents into the global `~/.gitconfig`.
 - Load up the Ocean theme from https://github.com/mdo/ocean-terminal.
+- Install [Lavalamp](https://github.com/jasonlong/lavalamp) for vim syntax highlighting.
 
 ### 4. Setup Firefox
 
