@@ -20,18 +20,18 @@
 - Load [`.bash_profile`](/.bash_profile).
 - Load [`.gitconfig`](/.gitconfig) contents into the global `~/.gitconfig`.
 - Load up the Ocean theme from https://github.com/mdo/ocean-terminal.
-- Install [Lavalamp](https://github.com/jasonlong/lavalamp) for vim syntax highlighting.
+- Install [Lavalamp](https://github.com/jasonlong/lavalamp/) for vim syntax highlighting.
 
 ### 4. Setup Firefox
 
 - Download and install latest version of [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/).
-- Make sure [Firebug](http://www.getfirebug.com/) extension is installed.
+- Make sure [Firebug](https://www.getfirebug.com/) extension is installed.
 
 ### 5. Install Homebrew
 
 - Install latest version of [Homebrew](http://brew.sh/).
 - Install wget using `$ brew install wget`.
-- Install [Apache Maven](http://maven.apache.org/) using `$ brew install maven`.
+- Install [Apache Maven](https://maven.apache.org/) using `$ brew install maven`.
 
 ## Web development
 
@@ -40,12 +40,12 @@
 - Change the following in Apache's `httpd.conf`:
   - Set `DocumentRoot` to `~/Work` (and make sure access to that directory is granted).
   - Set `AllowOverride` to `All` to enable use of `.htaccess` files.
-  - Uncomment `LoadModule rewrite_module ...` to enable [mod_rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html) and `LoadModule php5_module ...` for PHP.
+  - Uncomment `LoadModule rewrite_module ...` to enable [mod_rewrite](https://httpd.apache.org/docs/current/mod/mod_rewrite.html) and `LoadModule php5_module ...` for PHP.
 - Create a nice `index.html` file for your new document root.
 
 ### 7. Setup MySQL
 
-- Download and install [MySQL Community Server](http://dev.mysql.com/downloads/mysql/) (DMG-Archive).
+- Download and install [MySQL Community Server](https://dev.mysql.com/downloads/mysql/) (DMG-Archive).
 - Change MySQL's root password using `$ mysqladmin -u root -p'<temporary password>' password '<new password>'`. You got the temporary password during installation. If you don't want to have a root password, type `''` as new password.
 - Download and install latest version of [phpMyAdmin](https://www.phpmyadmin.net/). A nice guide on how to set up phpMyAdmin can be found [here](https://www.coolestguidesontheplanet.com/get-apache-mysql-php-and-phpmyadmin-working-on-osx-10-11-el-capitan/).
 
@@ -61,10 +61,10 @@
 
 - Download and install latest version of [Atom](https://www.atom.io/).
 - Install favourite packages:
-  - [Wrap in tag](https://www.atom.io/packages/atom-wrap-in-tag)
-  - [Selector to tag](https://www.atom.io/packages/selector-to-tag)
-  - [EditorConfig](https://www.atom.io/packages/editorconfig)
-  - [REST Client](https://www.atom.io/packages/rest-client)
+  - [Wrap in tag](https://www.atom.io/packages/atom-wrap-in-tag/)
+  - [Selector to tag](https://www.atom.io/packages/selector-to-tag/)
+  - [EditorConfig](https://www.atom.io/packages/editorconfig/)
+  - [REST Client](https://www.atom.io/packages/rest-client/)
 - Disable packages `wrap-guide` and `spell-check`.
 
 **Hide specific directories from tree view:** If you want to hide directories like `.sass-cache` and `node_modules` from the tree view, add them to `Ignored Names` in Atom's config and make sure `Hide Ignored Names` in the config of package `tree-view` is activated.
