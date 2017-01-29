@@ -49,15 +49,25 @@
 - Change MySQL's root password using `$ mysqladmin -u root -p'<temporary password>' password '<new password>'`. You got the temporary password during installation. If you don't want to have a root password, type `''` as new password.
 - Download and install latest version of [phpMyAdmin](https://www.phpmyadmin.net/). A nice guide on how to set up phpMyAdmin can be found [here](https://www.coolestguidesontheplanet.com/get-apache-mysql-php-and-phpmyadmin-working-on-osx-10-11-el-capitan/).
 
-### 8. Setup Node.js and Composer
+### 8. Setup Node.js
 
 - Download and install latest version of [Node.js](https://www.nodejs.org/).
-  - Globally install [Grunt](http://gruntjs.com/)'s CLI via npm: `$ npm install -g grunt-cli`
-- Download and install latest version of [Composer](https://www.getcomposer.org/).
+- Globally install [Grunt](http://gruntjs.com/)'s CLI via npm: `$ npm install -g grunt-cli`
 
 **Fixing npm permissions:** When you try to install Grunt (or any node package) globally and an error which looks like `Error: EACCESS: permission denied, mkdir '/usr/local/lib/node_modules/grunt-cli']` shows up, get information [here](https://docs.npmjs.com/getting-started/fixing-npm-permissions) on how to fix it.
 
-### 9. Setup Atom
+### 9. Setup Composer
+Open up a terminal window and execute the following lines to globally install [Composer](https://www.getcomposer.org/).
+
+```
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php -r "if (hash_file('SHA384', 'composer-setup.php') === '55d6ead61b29c7bdee5cccfb50076874187bd9f21f65d8991d46ec5cc90518f447387fb9f76ebae1fbbacf329e583e30') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
+mv composer.phar /usr/local/bin/composer
+```
+
+### 10. Setup Atom
 
 - Download and install latest version of [Atom](https://www.atom.io/).
 - Install favourite packages:
